@@ -1,5 +1,7 @@
 desktop.ini
 
 Images/image_bin/*
+!Images/image_bin/.gitkeep
 Images/out/*
-Images/.ipynb_checkpoints
+!Images/out/.gitkeep
+Images/dev/.ipynb_checkpoints
