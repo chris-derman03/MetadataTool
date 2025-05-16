@@ -1,0 +1,14 @@
+#!/bin/sh
+
+if [ -z "$1" ]; then
+  images_dir="./image_bin"
+else
+  images_dir="$1"
+fi
+
+
+# Clear Contents of Target Data File
+# > image_metadata.csv
+
+exiftool -csv "$images_dir"/*.jpg > ./out/jpg_metadata.csv
+exiftool -csv "$images_dir"/*.png > ./out/png_metadata.csv
