@@ -11,4 +11,8 @@ fi
 # > image_metadata.csv
 
 exiftool -csv "$images_dir"/*.jpg > ./out/jpg_metadata.csv
+exiftool -csv "$images_dir"/*.JPG >> ./out/jpg_metadata.csv
 exiftool -csv "$images_dir"/*.png > ./out/png_metadata.csv
+exiftool -csv "$images_dir"/*.PNG >> ./out/png_metadata.csv
+exiftool -csv -extractEmbedded "$images_dir"/*.mp4 > ./out/mp4_metadata.csv
+exiftool -csv -extractEmbedded "$images_dir"/*.MP4 >> ./out/mp4_metadata.csv

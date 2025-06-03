@@ -1,1 +1,2 @@
 sudo apt install libimage-exiftool-perl
+sudo apt install ffmpeg
